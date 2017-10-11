@@ -1,9 +1,10 @@
 import re
+import fileinput
 
-file = open('friends.train.scene_delim.conll','r')
+#file = open('friends.train.scene_delim.conll','r')
 temp = ""
 i=0
-for lines in file:
+for lines in fileinput.input():
 	t =re.sub(' +',' ',lines)
 	t1 = t.split(" ")
 	for j in range (len(t1)-1):
