@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Calls the python program to convert the first argument to a tab delimited file.
-./space_tab.py $1
+python space_tab.py $1
 
 #Runs some code with R to convert tab delimited files to arff and csv files.
 ./script.r

@@ -12,8 +12,8 @@ library("stringr")
 library("foreign")
 
 # Reads in txt file as a tab-delimited "csv-as-far-as-R-is-concerned" file with headers
-# (Assumption: the txt file has been converted to tab-delimited format)
-data <- read.csv("file1.txt", header=TRUE, sep="\t")
+# (Assumption: the txt fab_ile has been converted to tab-delimited format)
+data <- read.csv("tab_delim_file1.txt", header=TRUE, sep="\t")
 # Label each sentence in the file with a sentence number so that blank rows can be
 # removed without loss of information
 j = 1;

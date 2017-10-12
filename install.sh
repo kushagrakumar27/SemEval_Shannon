@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Installs python
+sudo apt-get install python3.6
+
 #Installs the program R
 sudo apt-get install r-base
 

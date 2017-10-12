@@ -1,16 +1,17 @@
 import re
 import fileinput
 
-#file = open('friends.train.scene_delim.conll','r')
 temp = ""
 i=0
 for lines in fileinput.input():
-	t =re.sub(' +',' ',lines)
-	t1 = t.split(" ")
-	for j in range (len(t1)-1):
-		temp += t1[j] + "    "
-	temp+="\n"
-	print (i)
+	#Substitues all white space with a tab char
+	t =re.sub(' +','\t',lines)
+
+	#Insert the headers at the top of the file
+	if i==0:
+		t = "SeasonEpisode	Scene ID	Token ID	Word Form	POS Tag	Constituency Tag	Lemma	Frameset ID	Word Sense	Speaker	Named Entity Tag	Entity ID	Sentence"
 	i+=1
-file = open('friends.train.scene_delim.txt','w')
+	temp+=t
+#Writes to a file named tab_delim_file1.txt
+file = open('tab_delim_file1.txt','w')
 file.write(temp)
