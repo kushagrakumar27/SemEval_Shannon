@@ -7,6 +7,7 @@
 # is written out in both .csv and .arff format, the latter being the preferred format for Weka classification.
 
 # Enable libraries
+#install.packages("data.table", dependencies=TRUE)
 library("data.table")
 library("stringr")
 library("foreign")
