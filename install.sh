@@ -6,8 +6,10 @@ sudo apt-get install python3.6
 
 #Installs the program R
 sudo apt-get install r-base
+#For installing R packages, R-base-dev package should also be installed::
+sudo apt-get install r-base-dev
 #If you don't have R-libraries run these:::
-#R
+#R (opens up R command line interface)
 #install.packages("data.table", dependencies=TRUE)
 
 #If you don't have java:::
