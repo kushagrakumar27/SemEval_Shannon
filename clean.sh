@@ -1,3 +1,4 @@
+#Author: William Jaros
 #!/bin/bash
 #Removes all the created files from running ./runit.sh for ease of deleting the files.
 

@@ -1,3 +1,4 @@
+#Author: Marcus Walker
 # The following code calls Weka to run our data through a J48 algorithm to classify Entity.ID, our class variable
 # which identifies the person being referenced by a relevant word in a line of dialogue.  The output is written to
 # a text file, which includes measures of accuracy as well as the confusion matrix.  Fun!
