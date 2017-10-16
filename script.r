@@ -8,7 +8,8 @@
 # is written out in both .csv and .arff format, the latter being the preferred format for Weka classification.
 
 # Enable libraries
-#install.packages("data.table", dependencies=TRUE)
+install.packages("data.table",repos = "http://cran.us.r-project.org")
+install.packages("stringr",repos = "http://cran.us.r-project.org")
 library("data.table")
 library("stringr")
 library("foreign")

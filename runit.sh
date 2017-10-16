@@ -12,11 +12,6 @@ python space_tab.py $1
 
 ./script.r
 
-#If you don't have R-libraries run these:::
-#R (opens up R command line interface)
-#install.packages("data.table", dependencies=TRUE)
-
-
 #Runs some code with the Weka program to produce our results - the 
 #algorithms and documentation is explained in other files.
 ./weka.sh
