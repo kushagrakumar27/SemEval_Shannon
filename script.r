@@ -1,3 +1,4 @@
+#Author: Marcus Walker
 #!/usr/bin/Rscript
 
 # The following R code is designed to clean and format the data in preparation for throwing it into Weka.

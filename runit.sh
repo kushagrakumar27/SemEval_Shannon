@@ -1,3 +1,4 @@
+#Author: William Jaros
 #!/bin/bash
 
 #Calls the python program to convert the first argument to a tab delimited file.
@@ -9,7 +10,12 @@ python space_tab.py $1
 #install.packages("data.table", dependencies=TRUE)
 #Refer to README under "Running the program" for detailed explanation:
 
-./script.sh
+./script.r
+
+#If you don't have R-libraries run these:::
+#R (opens up R command line interface)
+#install.packages("data.table", dependencies=TRUE)
+
 
 #Runs some code with the Weka program to produce our results - the 
 #algorithms and documentation is explained in other files.
