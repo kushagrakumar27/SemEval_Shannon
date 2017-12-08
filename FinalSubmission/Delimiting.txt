@@ -1,0 +1,22 @@
+##Author: Kushagra Kumar
+
+# README Step 1
+import re
+import fileinput
+
+temp = ""
+i=0
+for lines in fileinput.input():
+        #Substitues all white space with a tab char
+        t =re.sub(' +','\t',lines)
+
+        #Insert the headers at the top of the file
+        if i==0:
+                t = "SeasonEpisode      Scene ID        Token ID        Word Form       POS Tag Constituency Tag        Lemma   Frameset ID     Word Sense     Speaker  Named Entity Tag        Entity ID       Sentence"
+        i+=1
+        temp+=t
+#Writes to a file named tab_delim_file1.txt
+file = open('tab_delim_file1.txt','w')
+file.write(temp)
+
+
